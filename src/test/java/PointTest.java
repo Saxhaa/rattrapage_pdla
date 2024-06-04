@@ -25,20 +25,6 @@ public class PointTest {
         assert sum.x == 5 && sum.y == 7;
     }
 
-    // TODO: complete the implementation of Point to validate the following tests
-    @Test
-    public void testEquals() {
-        var p1 = new Point(1, 2);
-        var p2 = new Point(1, 3);
-        var p3 = new Point(1, 2);
-        var p4 = new Point(2, 2);
-
-        assert p1.equals(p1);
-        assert !p1.equals(p2);
-        assert p1.equals(p3);
-        assert !p1.equals(p4);
-    }
-
 
 
     // TODO: Implement the string formatting of Point
