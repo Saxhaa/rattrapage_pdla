@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: PointTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.049 s <<< FAILURE! - in PointTest
+PointTest.testCreation  Time elapsed: 0.019 s
+PointTest.testAdd  Time elapsed: 0 s
+PointTest.testHash  Time elapsed: 0.001 s
+PointTest.testToString  Time elapsed: 0.005 s
+PointTest.testEquals  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError
+	at PointTest.testEquals(PointTest.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

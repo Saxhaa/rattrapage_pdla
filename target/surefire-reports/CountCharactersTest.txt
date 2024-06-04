@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: CountCharactersTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 0.533 s <<< FAILURE! - in CountCharactersTest
+CountCharactersTest.testManyStrings  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError
+	at CountCharactersTest.testManyStrings(CountCharactersTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+CountCharactersTest.testSingleString  Time elapsed: 0.001 s
+CountCharactersTest.testManyStringsParallel  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.RuntimeException: not implemented
+	at CountCharacters.countOccurrencesParallel(CountCharacters.java:58)
+	at CountCharactersTest.testManyStringsParallel(CountCharactersTest.java:88)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+CountCharactersTest.testSingleStringInThread  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: not implemented
+	at CountCharacters.countOccurrencesInThread(CountCharacters.java:39)
+	at CountCharactersTest.testSingleStringInThread(CountCharactersTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+CountCharactersTest.testCounterThreadSafety  Time elapsed: 0.508 s  <<< FAILURE!
+java.lang.AssertionError
+	at CountCharactersTest.testCounterThreadSafety(CountCharactersTest.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+CountCharactersTest.testCountA  Time elapsed: 0.001 s
