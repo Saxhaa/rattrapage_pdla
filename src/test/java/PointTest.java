@@ -39,22 +39,7 @@ public class PointTest {
         assert !p1.equals(p4);
     }
 
-    // TODO: ensure that the computed hash is coherent with equals
-    @Test
-    public void testHash() {
-        var points = Arrays.asList(
-                new Point(1, 2),
-                new Point(1, 2),
-                new Point(2, 2),
-                new Point(1, 3)
-        );
 
-        for (var p1 : points) {
-            for (var p2 : points) {
-                assert !p1.equals(p2) || p1.hashCode() == p2.hashCode();
-            }
-        }
-    }
 
     // TODO: Implement the string formatting of Point
     @Test

@@ -23,19 +23,5 @@ public class Point {
         return "("+this.x+","+" "+this.y+")";
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Point point = (Point) obj;
-        //return x.equals(point.x) && y.equals(point.y);
-        //pas réussi mais je suppose qu'il fallait aller dans cette direction
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(x); //pas fini non plus
-    }
 }
 
